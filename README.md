@@ -14,7 +14,6 @@ Das Objekt soll:
 
 ## ToDos
 
--[x] Objekt mit Speisen,Getränken... erstellen
--[x] Ausgabe aller Speisearten
--[ ] Funcktion zur einfügung von Speisen je Speiseart
--[ ]
+- [x] Objekt mit Speisen,Getränken... erstellen
+- [x] Ausgabe aller Speisearten
+- [ ] Funcktion zur einfügung von Speisen je Speiseart
