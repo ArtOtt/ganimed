@@ -1,12 +1,59 @@
 // Speisekarte
 
+
+/*
 let menü= {
   haupt: [{name:"Margarita", price:10},{name:"Funghi", price:13}],
   neben: [{name:"Pommes",price:3},{name:"MiniPiza", price:2.50}],
   dessert: [{name:"Joghurt", price:2.50},{name:"Kuchen", price:3}],
+*/
+
+
+  class Menü {
+   constructor(name, price){
+      this._name = name;
+      this._price = price;
+   }
+
+   // Gibt Name und Preis zurück
+
+   get name() {
+      return this._name;
+   }
+
+   get price() {
+      return this._price;
+   }
+
+// Preisänderung
+
+   set newPrice(value) {
+      if (typeof value === "number"){
+         this._price = value;
+      } else {
+         console.log("a number, pleas")
+      }
+   } 
+  }
 
 
 
+  //Unterklasse Pizza
+
+  class Pizza extends Menü {
+   constructor
+  }
+
+
+
+
+
+
+
+
+
+
+/*
 //Gibt alle Hauptspeisen zurück 
   get hauptspeisen() {
        let speisen = "";
