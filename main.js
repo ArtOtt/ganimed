@@ -45,17 +45,49 @@ let menü= {
       super(name, price);
       this._souce = souce;
    }
+
+   //Soucen ausgabe
+
+   get souce() {
+      return this._souce;
+   }
   }
 
 
-const sausen = ["Majo", "Ketchup"];
+const soucen = ["Majo", "Ketchup"];
 
-const Margarita = new Pizza("Margaritha", 12.99, sausen);
+const Margarita = new Pizza("Margaritha", 12.99, soucen);
+const Thuna = new Pizza("Thuna", 14.99, soucen);
+const Funghui = new Pizza("Funghui", 11.99, soucen);
+const Bolognese = new Pizza("Bolognese", 15.99, soucen);
 
+const pizzaTablet = [Margarita, Thuna, Funghui,Bolognese];
+
+//Gibt was aus der Liste pizzaTablet
+const arrayReader = array => {
+   let sum = [];
+   for(let i = 0; i < array.length; i++){
+      sum.push(`${array[i].name} cost: ${array[i].price}`);
+   }
+   return sum;
+}
+
+console.log(arrayReader(pizzaTablet));
+
+
+
+
+
+
+
+
+
+/*
 console.log(Margarita);
-console.log(Margarita._price);
+console.log(Margarita.price);
 Margarita.newPrice(10);
-console.log(Margarita._price);
+console.log(Margarita.price);
+console.log(Margarita.souce);
 
 
 
