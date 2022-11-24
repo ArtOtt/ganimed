@@ -25,9 +25,9 @@ let menü= {
       return this._price;
    }
 
-// Preisänderung
+// Preisänderung mit Validierung
 
-   set newPrice(value) {
+    newPrice(value) {
       if (typeof value === "number"){
          this._price = value;
       } else {
@@ -41,13 +41,21 @@ let menü= {
   //Unterklasse Pizza
 
   class Pizza extends Menü {
-   constructor
+   constructor(name, price, souce){
+      super(name, price);
+      this._souce = souce;
+   }
   }
 
 
+const sausen = ["Majo", "Ketchup"];
 
+const Margarita = new Pizza("Margaritha", 12.99, sausen);
 
-
+console.log(Margarita);
+console.log(Margarita._price);
+Margarita.newPrice(10);
+console.log(Margarita._price);
 
 
 
@@ -89,3 +97,4 @@ console.log(menü.hauptspeisen);
 console.log(menü.nebenspeisen);
 console.log(menü.desserts);
 
+*/
